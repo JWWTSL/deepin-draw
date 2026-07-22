@@ -193,7 +193,7 @@ FileSelectDialog::FileSelectDialog(DrawBoard *parent): DFileDialog(parent)
     this->setAcceptMode(QFileDialog::AcceptSave);
 
     //只显示文件夹
-    this->setOptions(QFileDialog::DontResolveSymlinks | QFileDialog::DontUseNativeDialog);
+    this->setOptions(QFileDialog::DontResolveSymlinks /*| QFileDialog::Option(DontUseNativeDialog)*/);
 
     //设置显示模式
     this->setViewMode(DFileDialog::List);
